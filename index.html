@@ -291,12 +291,24 @@
       .nav-links.open { display: flex; }
       .hamburger { display: flex; }
       .hero-grid, .about-grid, .contact-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
-      .about-photo { aspect-ratio: 1/1; max-width: 240px; }
+      .about-photo { aspect-ratio: 1/1; 
+        /* max-width: 240px;  */
+        }
       .about-highlights { grid-template-columns: 1fr; }
       .skills-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
       .projects-grid { grid-template-columns: 1fr; }
       .hero-title { font-size: 2.2rem; }
       section { padding: 3.5rem 5%; }
+      .hero-grid{
+        padding-right: 2rem;
+      }
+      .hero-cta{
+        gap: 0.5rem;
+      }
+      .photo-badge{
+        right: 50%;
+        transform: translateX(50%);
+      }
     }
   </style>
 </head>
@@ -539,9 +551,7 @@
             <span class="tag">Judge me</span>
           </div>
           <div class="project-links">
-            <!-- Replace # with actual live store URL -->
             <a href="https://www.foureditors.com/" class="link-live">Live Store</a>
-            <a href="#" class="link-code">Details</a>
           </div>
         </div>
       </div>
@@ -566,8 +576,7 @@
             <span class="tag">Prestige</span>
           </div>
           <div class="project-links">
-            <a href="#" class="link-live">Live Store</a>
-            <a href="#" class="link-code">Details</a>
+            <a href="https://www.cosmeze.com/" class="link-live">Live Store</a>
           </div>
         </div>
       </div>
